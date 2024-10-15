@@ -1,2 +1,61 @@
-<p><a href="blob:https%3A//wordtohtml.net/9578e113-388c-463b-b11e-48ff7a0f32a5" class="fr-file">index.html.txt</a></p>
-<div style="color: red">Word to HTML trial - please <a href="https://wordtohtml.net/site/payment">Go PRO</a> to get whole HTML.</div>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>حاسبة جاذبية الاستثمار في الزراعة بدون تربة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>حاسبة جاذبية الاستثمار</h1>
+  </header>
+
+  <!-- نموذج إدخال البيانات -->
+  <main>
+    <form id="investment-form">
+      <h2>أدخل بيانات المشروع</h2>
+      <!-- تكلفة المعدات -->
+      <label for="equipment-cost">تكلفة المعدات ($):</label>
+      <input type="number" id="equipment-cost" required>
+
+      <!-- تكلفة البذور والمواد -->
+      <label for="seeds-cost">تكلفة البذور والمواد ($):</label>
+      <input type="number" id="seeds-cost" required>
+
+      <!-- تكاليف الصيانة -->
+      <label for="maintenance-cost">تكاليف الصيانة ($):</label>
+      <input type="number" id="maintenance-cost" required>
+
+      <!-- نوع المحصول -->
+      <label for="crop-type">نوع المحصول:</label>
+      <input type="text" id="crop-type" required>
+
+      <!-- حجم المشروع -->
+      <label for="project-size">حجم المشروع (م²):</label>
+      <input type="number" id="project-size" required>
+
+      <!-- زر احسب -->
+      <button type="button" id="calculate-btn">احسب</button>
+    </form>
+  </main>
+
+  <!-- قسم النتائج -->
+  <section id="results" style="display: none;">
+    <h2>نتائج الحساب</h2>
+    <p id="total-cost"></p>
+    <p id="expected-returns"></p>
+    <p id="risk-analysis"></p>
+    <!-- زر تنزيل التقرير -->
+    <button id="download-report">تنزيل التقرير</button>
+  </section>
+
+  <!-- تذييل الصفحة -->
+  <footer>
+    <p>&copy; 2023 حاسبة جاذبية الاستثمار</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
